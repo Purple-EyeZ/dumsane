@@ -577,7 +577,7 @@ to disable this popup, run: /"+plugin.storage.settings.command.name+" code:plugi
 	const { meta: { resolveSemanticColor } } = metro.findByProps("colors", "meta");
 	const ThemeStore = metro.findByStoreName("ThemeStore");
 	const EMBED_COLOR = function(color) {
-	  return parseInt(resolveSemanticColor(ThemeStore.theme, ui.semanticColors.BACKGROUND_SECONDARY).slice(1), 16);
+	  return parseInt(resolveSemanticColor(ThemeStore.theme, ui.semanticColors.BACKGROUND_BASE_LOWER).slice(1), 16);
 	};
 	let madeSendMessage, UserStore, plugin, usedInSession = false;
 	function sendMessage() {
